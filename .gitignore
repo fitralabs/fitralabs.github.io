@@ -1,0 +1,10 @@
+# Local / tooling (not needed for GitHub Pages)
+.cursor/
+_bmad/
+spec.md
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
