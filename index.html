@@ -3,102 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Simply Quran by Fitra Labs — a digital Mushaf built for focus. Boutique studio, Kuala Lumpur. Sustainable Sadaqah: 50% to charity.">
-    <title>Fitra Labs — Simply Quran</title>
-    <link rel="icon" href="assets/fitra_labs-mark.svg" type="image/svg+xml">
-    <link rel="icon" href="assets/fitra-labs-mark.png" type="image/png" sizes="any">
+    <meta name="description" content="Fitra Labs — boutique software studio in Kuala Lumpur. Essential Islamic lifestyle tools: Simply Quran and more. Sustainable Sadaqah.">
+    <link rel="canonical" href="https://fitralabs.app/">
+    <title>Fitra Labs</title>
+    <link rel="icon" href="/assets/fitra_labs-mark.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/fitra-labs-mark.png" type="image/png" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
   </head>
-  <body class="page--home">
+  <body class="page--studio">
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="masthead">
-      <a class="masthead__brand" href="index.html" aria-label="Fitra Labs home">
-        <img class="masthead__mark" src="assets/fitra_labs-mark.svg" width="36" height="36" decoding="async" alt="">
+      <a class="masthead__brand" href="/" aria-label="Fitra Labs home">
+        <img class="masthead__mark" src="/assets/fitra_labs-mark.svg" width="36" height="36" decoding="async" alt="">
         <span class="masthead__name">Fitra Labs</span>
       </a>
     </header>
 
     <main id="main">
-      <!-- Direction 4: proof band — manuscript field + early gallery + solid CTA -->
-      <section class="hero proof-band" aria-labelledby="hero-title">
-        <div class="hero__inner">
-          <img
-            class="hero__icon"
-            src="assets/simply-quran-icon.png"
-            width="96"
-            height="96"
-            decoding="async"
-            alt="Simply Quran app icon"
-          >
-          <h1 id="hero-title" class="hero__title">Simply Quran</h1>
-          <p class="hero__lede">
-            A digital replacement for your physical Mushaf. Built for focus, designed for the soul.
+      <section class="hero hero--studio" aria-labelledby="studio-title">
+        <div class="hero__inner hero__inner--studio">
+          <h1 id="studio-title" class="hero__title hero__title--studio">Fitra Labs</h1>
+          <p class="hero__lede hero__lede--studio">
+            A boutique software studio in Kuala Lumpur. We craft essential, purpose-driven tools for the modern Muslim—stripping ads, tracking, and bloat so only what matters remains.
           </p>
-          <!-- Replace href with your Play Console listing when published -->
-          <a
-            class="btn btn--primary"
-            href="https://play.google.com/store/search?q=Simply%20Quran%20Fitra%20Labs&amp;c=apps"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Download on Play Store</a>
-
-          <div class="gallery" aria-label="Reading themes">
-            <div class="gallery__track">
-              <figure class="gallery__card">
-                <div class="gallery__shot gallery__shot--light" role="img" aria-label="Manuscript preview, light theme"></div>
-                <figcaption class="gallery__cap">Light</figcaption>
-              </figure>
-              <figure class="gallery__card">
-                <div class="gallery__shot gallery__shot--sepia" role="img" aria-label="Manuscript preview, sepia theme"></div>
-                <figcaption class="gallery__cap">Sepia</figcaption>
-              </figure>
-              <figure class="gallery__card">
-                <div class="gallery__shot gallery__shot--dark" role="img" aria-label="Manuscript preview, dark theme"></div>
-                <figcaption class="gallery__cap">Dark</figcaption>
-              </figure>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section class="section section--manifesto" aria-labelledby="manifesto-heading">
+      <section class="section section--studio-intro" aria-labelledby="intro-heading">
         <div class="section__inner section__inner--narrow">
-          <h2 id="manifesto-heading" class="section__label">Purpose over bloat</h2>
-          <p class="manifesto__text">
-            In an era of noise, we return to the Fitra—the natural state of purity and simplicity. No ads. No tracking. Just the Word.
+          <h2 id="intro-heading" class="section__label">The Fitra way</h2>
+          <p class="manifesto__text manifesto__text--studio">
+            We build toward the natural state of purity and simplicity in software: calm interfaces, honest privacy, and products worthy of the name <em>Mushaf</em> in your pocket.
           </p>
         </div>
       </section>
 
-      <section class="section section--highlights" aria-labelledby="highlights-heading">
+      <section class="section section--catalog" aria-labelledby="catalog-heading">
         <div class="section__inner">
-          <h2 id="highlights-heading" class="section__title">Built for the reader</h2>
-          <ul class="highlights">
-            <li class="highlights__item">
-              <span class="highlights__glass">Dual-script</span>
-              <span class="highlights__text">Uthmani &amp; Indo-Pak.</span>
-            </li>
-            <li class="highlights__item">
-              <span class="highlights__glass">Offline</span>
-              <span class="highlights__text">100% offline utility.</span>
-            </li>
-            <li class="highlights__item">
-              <span class="highlights__glass">Personal</span>
-              <span class="highlights__text">Personalized reading experience.</span>
-            </li>
-          </ul>
+          <h2 id="catalog-heading" class="section__title">Products</h2>
+
+          <a class="product-card" href="/simplyquran/">
+            <img class="product-card__icon" src="/assets/simply-quran-icon.png" width="72" height="72" decoding="async" alt="">
+            <div class="product-card__body">
+              <h3 class="product-card__title">Simply Quran</h3>
+              <p class="product-card__desc">
+                Your digital Mushaf—dual script, fully offline, and tuned for deep reading. See the full story, themes, and download.
+              </p>
+            </div>
+            <span class="btn btn--secondary">Explore Simply Quran</span>
+          </a>
+
+          <article class="product-teaser" aria-labelledby="halal-teaser">
+            <div class="product-teaser__body">
+              <h3 id="halal-teaser" class="product-teaser__title">Simply Halal</h3>
+              <p class="product-teaser__desc">
+                Instant, data-driven halal verification—high utility, zero distraction. <strong>Upcoming.</strong>
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section section--sadaqah" aria-labelledby="sadaqah-heading">
+      <section class="section section--sadaqah section--sadaqah--compact" aria-labelledby="studio-sadaqah">
         <div class="section__inner section__inner--narrow">
-          <h2 id="sadaqah-heading" class="section__title section__title--light">Sustainable Sadaqah</h2>
+          <h2 id="studio-sadaqah" class="section__title section__title--light">Sustainable Sadaqah</h2>
           <p class="sadaqah__text">
-            50% of all Fitra Labs proceeds are donated to reputable Islamic charities. We believe in building tools that serve the Ummah, sustained by the community.
+            50% of all Fitra Labs proceeds are donated to reputable Islamic charities. We believe in tools that serve the Ummah, sustained by the community.
           </p>
         </div>
       </section>
@@ -106,13 +80,13 @@
 
     <footer class="site-footer">
       <p class="footer__sanad">Handcrafted in Kuala Lumpur, Malaysia.</p>
-        <nav class="footer__nav" aria-label="Legal and contact">
-          <ul class="footer__links">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="mailto:salam@fitralabs.app">salam@fitralabs.app</a></li>
-          </ul>
-        </nav>
+      <nav class="footer__nav" aria-label="Legal and contact">
+        <ul class="footer__links">
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="mailto:salam@fitralabs.app">salam@fitralabs.app</a></li>
+        </ul>
+      </nav>
       <p class="footer__version" aria-label="Site version">v1.0.0</p>
     </footer>
   </body>
