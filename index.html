@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Fitra Labs — boutique software studio in Kuala Lumpur. Simply Quran, Simply Qibla, and more. 100% offline, ad-free tools. Sustainable Sadaqah.">
+    <meta name="description" content="Fitra Labs — a premium app studio. Essential tools for the modern Muslim: Simply Quran, Simply Qibla, and more. Sustainable Sadaqah: 50% of proceeds to charity.">
     <link rel="canonical" href="https://fitralabs.app/">
     <title>Fitra Labs</title>
     <link rel="icon" href="/assets/fitra_labs-mark.svg" type="image/svg+xml">
@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/studio.css">
   </head>
   <body class="page--studio">
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -24,73 +25,145 @@
     </header>
 
     <main id="main">
-      <section class="hero hero--studio" aria-labelledby="studio-title">
-        <div class="hero__inner hero__inner--studio">
-          <h1 id="studio-title" class="hero__title hero__title--studio">Fitra Labs</h1>
-          <p class="hero__lede hero__lede--studio">
-            A boutique software studio in Kuala Lumpur. We craft essential, purpose-driven tools for the modern Muslim—stripping ads, tracking, and bloat so only what matters remains.
+      <section class="atelier-hero" aria-labelledby="studio-title">
+        <div class="atelier-hero__inner">
+          <img
+            class="atelier-hero__seed"
+            src="/assets/fitra_labs-mark.svg"
+            width="120"
+            height="120"
+            decoding="async"
+            alt="Fitra Labs seed mark"
+          >
+          <h1 id="studio-title" class="atelier-hero__title">Fitra Labs</h1>
+          <p class="atelier-hero__tagline">Crafting Essential Tools for the Modern Muslim.</p>
+          <p class="atelier-hero__mission">
+            We believe technology should serve the soul, not distract it. We strip away the noise to return to the Fitra—the natural state of purity and focus.
           </p>
         </div>
       </section>
 
-      <section class="section section--studio-intro" aria-labelledby="intro-heading">
-        <div class="section__inner section__inner--narrow">
-          <h2 id="intro-heading" class="section__label">The Fitra way</h2>
-          <p class="manifesto__text manifesto__text--studio">
-            We build toward the natural state of purity and simplicity in software: calm interfaces, honest privacy, and products worthy of the name <em>Mushaf</em> in your pocket.
-          </p>
-        </div>
-      </section>
-
-      <section class="section section--catalog" aria-labelledby="catalog-heading">
+      <section class="section section--collection" aria-labelledby="collection-heading">
         <div class="section__inner">
-          <h2 id="catalog-heading" class="section__title">Products</h2>
+          <h2 id="collection-heading" class="section__title">The Collection</h2>
 
-          <a class="product-card" href="/simplyquran/">
-            <img class="product-card__icon" src="/assets/simply-quran-icon.png" width="72" height="72" decoding="async" alt="">
-            <div class="product-card__body">
-              <h3 class="product-card__title">Simply Quran</h3>
-              <p class="product-card__desc">
-                Your digital Mushaf—dual script, fully offline, ad-free, and tuned for deep reading. See the full story, themes, and download.
+          <div class="collection__grid">
+            <a class="collection-card" href="/quran/">
+              <div class="collection-card__visual">
+                <img
+                  class="collection-card__icon"
+                  src="/assets/simply-quran-icon.png"
+                  width="72"
+                  height="72"
+                  decoding="async"
+                  alt=""
+                >
+                <div class="collection-card__thumb" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <span class="status-pill status-pill--live">Available now</span>
+              <h3 class="collection-card__title">Simply Quran</h3>
+              <p class="collection-card__desc">
+                A digital replacement for the physical Mushaf—dual script, fully offline, and tuned for deep reading.
               </p>
-            </div>
-            <span class="btn btn--secondary">Explore Simply Quran</span>
-          </a>
+              <div class="collection-card__actions">
+                <span class="btn btn--secondary">Explore Simply Quran</span>
+              </div>
+            </a>
 
-          <a class="product-card product-card--qibla" href="/simplyqibla/">
-            <div class="product-card__icon product-card__icon--svg" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="56" height="56" aria-hidden="true">
-                <circle cx="32" cy="32" r="28" stroke="#AF9058" stroke-width="2.5" />
-                <path d="M32 10 L36 32 L32 30 L28 32 Z" fill="#AF9058" opacity="0.9" />
-                <circle cx="32" cy="32" r="3" fill="#1C1B18" />
-              </svg>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__title">Simply Qibla</h3>
-              <p class="product-card__desc">
-                Find the Qibla with a clear compass—100% offline, no ads, no tracking. Built for travel, home, and the moments in between.
+            <article class="collection-card collection-card--muted" aria-labelledby="qibla-card-title">
+              <div class="collection-card__visual" aria-hidden="true">
+                <svg
+                  class="collection-card__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  width="72"
+                  height="72"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="30" stroke="#AF9058" stroke-width="2" opacity="0.45" />
+                  <path d="M36 12 L40 36 L36 34 L32 36 Z" fill="#AF9058" opacity="0.5" />
+                  <circle cx="36" cy="36" r="3" fill="#1C1B18" opacity="0.55" />
+                </svg>
+              </div>
+              <span class="status-pill status-pill--muted">In the pipeline</span>
+              <h3 id="qibla-card-title" class="collection-card__title">Simply Qibla</h3>
+              <p class="collection-card__desc">
+                A minimalist compass for the Qibla—100% offline, ad-free, and private. In active development.
               </p>
-            </div>
-            <span class="btn btn--secondary">Explore Simply Qibla</span>
-          </a>
-
-          <article class="product-teaser" aria-labelledby="halal-teaser">
-            <div class="product-teaser__body">
-              <h3 id="halal-teaser" class="product-teaser__title">Simply Halal</h3>
-              <p class="product-teaser__desc">
-                Instant, data-driven halal verification—high utility, zero distraction. <strong>Upcoming.</strong>
-              </p>
-            </div>
-          </article>
+              <div class="collection-card__actions">
+                <span class="btn btn--ghost">Coming soon</span>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section section--sadaqah section--sadaqah--compact" aria-labelledby="studio-sadaqah">
+      <section class="section section--zen" aria-labelledby="zen-heading">
         <div class="section__inner section__inner--narrow">
-          <h2 id="studio-sadaqah" class="section__title section__title--light">Sustainable Sadaqah</h2>
-          <p class="sadaqah__text">
-            50% of all Fitra Labs proceeds are donated to reputable Islamic charities. We believe in tools that serve the Ummah, sustained by the community.
+          <h2 id="zen-heading" class="visually-hidden">The Fitra manifesto</h2>
+          <p class="zen-line"><em>No ads.</em> <em>No tracking.</em> Just the essence.</p>
+        </div>
+      </section>
+
+      <section class="section section--values" aria-labelledby="values-heading">
+        <div class="section__inner">
+          <h2 id="values-heading" class="section__title">The Fitra standard</h2>
+          <ul class="values-grid">
+            <li class="values-grid__item">
+              <div class="values-grid__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 3c-4 6-6 9-6 12a6 6 0 0 0 12 0c0-3-2-6-6-12Z" />
+                </svg>
+              </div>
+              <h3>Purity</h3>
+              <p>No ads. No tracking. No bloat.</p>
+            </li>
+            <li class="values-grid__item">
+              <div class="values-grid__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M4 19h16M7 16l3-8 3 5 3-9 3 12" />
+                </svg>
+              </div>
+              <h3>Excellence</h3>
+              <p>Native performance with high-end typography.</p>
+            </li>
+            <li class="values-grid__item">
+              <div class="values-grid__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 22s8-5 8-12a8 8 0 1 0-16 0c0 7 8 12 8 12Z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+              <h3>Independence</h3>
+              <p>100% offline-first utilities.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--sadaqah-studio" aria-labelledby="sadaqah-heading">
+        <div class="section__inner">
+          <h2 id="sadaqah-heading" class="section__title">Sustainable Sadaqah</h2>
+          <p class="sadaqah-intro">
+            We build for the Ummah, sustained by the community. <strong>50% of all studio proceeds</strong> are donated to reputable Islamic charities—across every app in the collection.
           </p>
+          <div class="sadaqah-split">
+            <div class="sadaqah-split__half">
+              <h3>Studio (50%)</h3>
+              <p>
+                Half of net proceeds fund engineering, typography, accessibility, and the long-term care of each product—so the tools you rely on stay fast, calm, and worthy of daily use.
+              </p>
+            </div>
+            <div class="sadaqah-split__half">
+              <h3>Charity (50%)</h3>
+              <p>
+                The other half flows to vetted Islamic charities—humanitarian relief, education, and community support—turning every download into shared barakah beyond the screen.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -104,7 +177,7 @@
           <li><a href="mailto:salam@fitralabs.app">salam@fitralabs.app</a></li>
         </ul>
       </nav>
-      <p class="footer__version" aria-label="Site version">v1.0.0</p>
+      <p class="footer__version" aria-label="Site version">v1.1.0</p>
     </footer>
   </body>
 </html>

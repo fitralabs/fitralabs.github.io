@@ -1,0 +1,59 @@
+/* Simply Qibla landing (uses base.css) */
+
+.hero--qibla {
+  min-height: min(85dvh, 48rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2rem, 6vw, 3.5rem) clamp(1.25rem, 4vw, 2rem);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 144, 88, 0.18) 0%,
+    rgba(250, 250, 250, 0.96) 40%,
+    var(--paper) 62%
+  );
+}
+
+.hero--qibla .hero__inner {
+  max-width: 40rem;
+  text-align: center;
+}
+
+.hero__icon--svg {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+}
+
+.hero__icon--svg svg {
+  display: block;
+}
+
+.hero--qibla .hero__icon.hero__icon--svg {
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+}
+
+.hero--qibla .hero__title {
+  margin-top: 0.35rem;
+}
+
+.qibla-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.05rem, 2.8vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.qibla-list li {
+  margin-bottom: 0.65rem;
+}
+
+.qibla-list strong {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
