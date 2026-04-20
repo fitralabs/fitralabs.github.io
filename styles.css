@@ -78,6 +78,36 @@ a:focus-visible {
   font-size: 1.5rem;
 }
 
+.logo--lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.65rem, 2.5vw, 1rem);
+}
+
+.logo__mark {
+  flex-shrink: 0;
+  width: clamp(2.25rem, 8vw, 3rem);
+  height: auto;
+  display: block;
+}
+
+.logo__word {
+  display: block;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.feature-icon img {
+  display: block;
+  width: clamp(3rem, 12vw, 3.5rem);
+  height: auto;
+}
+
 .mission {
   margin: 0 0 clamp(2.5rem, 7vw, 3.5rem);
   font-size: clamp(1.0625rem, 2.5vw, 1.1875rem);

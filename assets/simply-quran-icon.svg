@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-labelledby="sqIconTitle">
+  <title id="sqIconTitle">Simply Quran app icon</title>
+  <g stroke="#AF9058" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center spine -->
+    <path d="M50 18 V82" />
+    <!-- Inner pages -->
+    <path d="M50 22 C38 26 28 36 28 52 V74 C28 82 38 86 50 88" />
+    <path d="M50 22 C62 26 72 36 72 52 V74 C72 82 62 86 50 88" />
+    <!-- Outer cover -->
+    <path d="M50 16 C32 20 18 34 18 54 V76 C18 86 34 92 50 94" />
+    <path d="M50 16 C68 20 82 34 82 54 V76 C82 86 66 92 50 94" />
+  </g>
+</svg>
