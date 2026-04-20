@@ -7,10 +7,14 @@
     <title>Privacy Policy — Fitra Labs</title>
     <link rel="icon" href="assets/fitra_labs-mark.svg" type="image/svg+xml">
     <link rel="icon" href="assets/fitra-labs-mark.png" type="image/png" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="page--legal">
-    <main class="wrap">
+    <a class="skip-link" href="#legal-main">Skip to main content</a>
+    <main id="legal-main" class="wrap wrap--legal">
       <a class="back" href="index.html">← Home</a>
 
       <article class="legal">
@@ -57,13 +61,16 @@
         </section>
       </article>
 
-      <footer class="site-footer">
-        <p class="footer-loc">Kuala Lumpur, Malaysia</p>
-        <p class="footer-links">
-          <a href="mailto:salam@fitralabs.app">salam@fitralabs.app</a>
-          <span aria-hidden="true">·</span>
-          <a href="index.html">Home</a>
-        </p>
+      <footer class="site-footer site-footer--legal">
+        <p class="footer__sanad">Handcrafted in Kuala Lumpur, Malaysia.</p>
+        <nav class="footer__nav" aria-label="Legal and contact">
+          <ul class="footer__links">
+            <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="mailto:salam@fitralabs.app">salam@fitralabs.app</a></li>
+          </ul>
+        </nav>
+        <p class="footer__version">v1.0.0</p>
       </footer>
     </main>
   </body>
