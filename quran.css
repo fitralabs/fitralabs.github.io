@@ -5,6 +5,28 @@
   text-align: left;
 }
 
+.hero__actions {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
+.hero__actions .btn {
+  min-width: 12.8rem;
+}
+
+@media (max-width: 470px) {
+  .hero__actions {
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+}
+
 .gallery__track {
   display: flex;
   gap: 1rem;
@@ -37,22 +59,14 @@
 }
 
 .gallery__shot {
+  display: block;
+  width: 100%;
   height: min(17.5rem, 52vw);
   border-radius: 14px;
   border: 1px solid var(--gold-line);
   box-shadow: var(--shadow-soft);
-}
-
-.gallery__shot--light {
-  background: linear-gradient(155deg, #ffffff 0%, #f4f1ea 55%, #ebe6dc 100%);
-}
-
-.gallery__shot--sepia {
-  background: linear-gradient(155deg, #f6ead4 0%, #e8d4b4 50%, #dcc9a0 100%);
-}
-
-.gallery__shot--dark {
-  background: linear-gradient(155deg, #3a3836 0%, #252422 45%, #141312 100%);
+  object-fit: cover;
+  background: #f0ede6;
 }
 
 .gallery__cap {

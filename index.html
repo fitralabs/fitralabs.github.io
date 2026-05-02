@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Fitra Labs — a premium app studio. Essential tools for the modern Muslim: Simply Quran, Simply Qibla, and more. Sustainable Sadaqah: 50% of proceeds to charity.">
+    <meta name="description" content="Fitra Labs - a premium app studio. Essential tools for the modern Muslim: Simply Quran, Simply Qibla, and more. Sustainable Sadaqah: 50% of proceeds to charity.">
     <link rel="canonical" href="https://fitralabs.app/">
     <title>Fitra Labs</title>
     <link rel="icon" href="/assets/fitra_labs-mark.svg" type="image/svg+xml">
@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/base.css">
-    <link rel="stylesheet" href="/studio.css">
+    <link rel="stylesheet" href="/base.css?v=2">
+    <link rel="stylesheet" href="/studio.css?v=2">
   </head>
   <body class="page--studio">
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -38,7 +38,7 @@
           <h1 id="studio-title" class="atelier-hero__title">Fitra Labs</h1>
           <p class="atelier-hero__tagline">Crafting Essential Tools for the Modern Muslim.</p>
           <p class="atelier-hero__mission">
-            We believe technology should serve the soul, not distract it. We strip away the noise to return to the Fitra—the natural state of purity and focus.
+            We believe technology should serve the soul, not distract it. We strip away the noise to return to the Fitra, the natural state of purity and focus.
           </p>
         </div>
       </section>
@@ -50,48 +50,49 @@
           <div class="collection__grid">
             <a class="collection-card" href="/quran/">
               <div class="collection-card__visual">
-                <img
-                  class="collection-card__icon"
-                  src="/assets/simply-quran-icon.png"
-                  width="72"
-                  height="72"
-                  decoding="async"
-                  alt=""
-                >
+                <div class="collection-card__icon-shell">
+                  <img
+                    class="collection-card__icon"
+                    src="/assets/simply-quran.svg"
+                    width="96"
+                    height="96"
+                    decoding="async"
+                    alt=""
+                  >
+                </div>
                 <div class="collection-card__thumb" aria-hidden="true">
-                  <span></span><span></span><span></span>
+                  <img src="/assets/simply-quran/screenshots/theme-light.png" width="220" height="392" loading="lazy" decoding="async" alt="">
+                  <img src="/assets/simply-quran/screenshots/theme-sepia.png" width="220" height="392" loading="lazy" decoding="async" alt="">
+                  <img src="/assets/simply-quran/screenshots/theme-dark.png" width="220" height="392" loading="lazy" decoding="async" alt="">
                 </div>
               </div>
               <span class="status-pill status-pill--live">Available now</span>
               <h3 class="collection-card__title">Simply Quran</h3>
               <p class="collection-card__desc">
-                A digital replacement for the physical Mushaf—dual script, fully offline, and tuned for deep reading.
+                A digital replacement for the physical Mushaf, dual script, fully offline, and tuned for deep reading.
               </p>
               <div class="collection-card__actions">
                 <span class="btn btn--secondary">Explore Simply Quran</span>
               </div>
             </a>
 
-            <article class="collection-card collection-card--muted" aria-labelledby="qibla-card-title">
+            <article class="collection-card collection-card--qibla" aria-labelledby="qibla-card-title">
               <div class="collection-card__visual" aria-hidden="true">
-                <svg
-                  class="collection-card__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 72 72"
-                  fill="none"
-                  width="72"
-                  height="72"
-                  aria-hidden="true"
-                >
-                  <circle cx="36" cy="36" r="30" stroke="#AF9058" stroke-width="2" opacity="0.45" />
-                  <path d="M36 12 L40 36 L36 34 L32 36 Z" fill="#AF9058" opacity="0.5" />
-                  <circle cx="36" cy="36" r="3" fill="#1C1B18" opacity="0.55" />
-                </svg>
+                <div class="collection-card__icon-shell collection-card__icon-shell--qibla">
+                  <img
+                    class="collection-card__icon"
+                    src="/assets/simply-qibla.svg?v=3"
+                    width="96"
+                    height="96"
+                    decoding="async"
+                    alt=""
+                  >
+                </div>
               </div>
               <span class="status-pill status-pill--muted">In the pipeline</span>
               <h3 id="qibla-card-title" class="collection-card__title">Simply Qibla</h3>
               <p class="collection-card__desc">
-                A minimalist compass for the Qibla—100% offline, ad-free, and private. In active development.
+                A minimalist compass for the Qibla, 100% offline, ad-free, and private. In active development.
               </p>
               <div class="collection-card__actions">
                 <span class="btn btn--ghost">Coming soon</span>
@@ -148,19 +149,19 @@
         <div class="section__inner">
           <h2 id="sadaqah-heading" class="section__title">Sustainable Sadaqah</h2>
           <p class="sadaqah-intro">
-            We build for the Ummah, sustained by the community. <strong>50% of all studio proceeds</strong> are donated to reputable Islamic charities—across every app in the collection.
+            We build for the Ummah, sustained by the community. <strong>50% of all studio proceeds</strong> are donated to reputable Islamic charities across every app in the collection.
           </p>
           <div class="sadaqah-split">
             <div class="sadaqah-split__half">
               <h3>Studio (50%)</h3>
               <p>
-                Half of net proceeds fund engineering, typography, accessibility, and the long-term care of each product—so the tools you rely on stay fast, calm, and worthy of daily use.
+                Half of net proceeds fund engineering, typography, accessibility, and the long-term care of each product, so the tools you rely on stay fast, calm, and worthy of daily use.
               </p>
             </div>
             <div class="sadaqah-split__half">
               <h3>Charity (50%)</h3>
               <p>
-                The other half flows to vetted Islamic charities—humanitarian relief, education, and community support—turning every download into shared barakah beyond the screen.
+                The other half flows to vetted Islamic charities, humanitarian relief, education, and community support, turning every download into shared barakah beyond the screen.
               </p>
             </div>
           </div>

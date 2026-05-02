@@ -126,7 +126,7 @@
 
 @media (min-width: 800px) {
   .collection__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
 
@@ -146,6 +146,8 @@
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
+  min-width: 0;
+  height: 100%;
 }
 
 @supports (backdrop-filter: blur(16px)) {
@@ -176,11 +178,37 @@ a.collection-card:focus-visible {
   margin-bottom: 1.1rem;
 }
 
+.collection-card__icon-shell {
+  width: 96px;
+  height: 96px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--gold-line);
+  padding: 0.18rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .collection-card__icon {
-  width: clamp(3.5rem, 12vw, 4.5rem);
-  height: auto;
-  border-radius: 14px;
-  box-shadow: var(--shadow-soft);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* Wider Qibla viewBox: zoom artwork inside the same 96×96 shell as Quran */
+.collection-card__icon-shell--qibla .collection-card__icon {
+  transform: scale(1.22);
+  transform-origin: center center;
 }
 
 .collection-card__thumb {
@@ -189,23 +217,14 @@ a.collection-card:focus-visible {
   margin-top: 0.5rem;
 }
 
-.collection-card__thumb span {
+.collection-card__thumb img {
   flex: 1;
-  height: 2.75rem;
+  height: 3.65rem;
+  aspect-ratio: 9 / 16;
   border-radius: 6px;
   border: 1px solid var(--gold-line);
-}
-
-.collection-card__thumb span:nth-child(1) {
-  background: linear-gradient(145deg, #fff, #f4f1ea);
-}
-
-.collection-card__thumb span:nth-child(2) {
-  background: linear-gradient(145deg, #f6ead4, #dcc9a0);
-}
-
-.collection-card__thumb span:nth-child(3) {
-  background: linear-gradient(145deg, #3a3836, #141312);
+  object-fit: cover;
+  display: block;
 }
 
 .collection-card__title {
@@ -232,8 +251,8 @@ a.collection-card:focus-visible {
   opacity: 0.92;
 }
 
-.collection-card--muted .collection-card__visual svg {
-  opacity: 0.55;
+.collection-card--muted .collection-card__visual img {
+  opacity: 0.78;
 }
 
 /* —— Zen manifesto strip —— */

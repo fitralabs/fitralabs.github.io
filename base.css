@@ -178,8 +178,9 @@ a:focus-visible {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 600;
   font-size: clamp(2.35rem, 7.5vw, 3.5rem);
-  line-height: 1.08;
+  line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 0.1em;
   background: linear-gradient(
     105deg,
     var(--gold-highlight) 0%,

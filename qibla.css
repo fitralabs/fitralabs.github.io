@@ -19,20 +19,14 @@
   text-align: center;
 }
 
-.hero__icon--svg {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 0.5rem;
-}
-
-.hero__icon--svg svg {
-  display: block;
-}
-
-.hero--qibla .hero__icon.hero__icon--svg {
-  border-radius: 0;
+.hero--qibla .hero__icon.hero__icon--qibla {
+  margin-bottom: 0.5rem;
+  border-radius: 0.9rem;
   box-shadow: none;
-  width: auto;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .hero--qibla .hero__title {
