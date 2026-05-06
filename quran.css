@@ -1,5 +1,10 @@
 /* Simply Quran product page — manuscript / gold-forward (uses base.css) */
 
+.hero .hero__icon {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .gallery {
   margin-top: clamp(2rem, 5vw, 2.75rem);
   text-align: left;

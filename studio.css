@@ -27,7 +27,7 @@
 
 .atelier-hero__title {
   margin: 0 0 0.75rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: var(--font-serif);
   font-weight: 600;
   font-size: clamp(2.25rem, 7vw, 3.35rem);
   line-height: 1.05;
@@ -57,7 +57,7 @@
 
 .atelier-hero__tagline {
   margin: 0 0 1.75rem;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: clamp(0.9375rem, 2.2vw, 1.0625rem);
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -229,7 +229,7 @@ a.collection-card:focus-visible {
 
 .collection-card__title {
   margin: 0 0 0.5rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: var(--font-serif);
   font-size: 1.45rem;
   font-weight: 600;
   color: var(--ink);
@@ -264,7 +264,7 @@ a.collection-card:focus-visible {
 .zen-line {
   margin: 0 auto;
   max-width: 36rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.35rem, 4vw, 1.85rem);
   font-weight: 500;
   line-height: 1.65;
@@ -385,7 +385,7 @@ a.collection-card:focus-visible {
 
 .sadaqah-split__half h3 {
   margin: 0 0 0.65rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: var(--font-serif);
   font-size: 1.15rem;
   color: var(--gold-deep);
 }

@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Simply Quran by Fitra Labs - a digital Mushaf built for focus. Boutique studio, Kuala Lumpur. Sustainable Sadaqah: 50% to charity.">
+    <meta name="description" content="Simply Quran by Fitra Labs - now in open beta on Android. A focused digital Mushaf with dual script, offline reading, and no ads.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="canonical" href="https://fitralabs.app/quran/">
     <title>Simply Quran - Fitra Labs</title>
     <link rel="icon" href="/assets/fitra_labs-mark.svg" type="image/svg+xml">
     <link rel="icon" href="/assets/fitra-labs-mark.png" type="image/png" sizes="any">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/base.css">
     <link rel="stylesheet" href="/quran.css">
   </head>
@@ -41,17 +40,21 @@
             decoding="async"
             alt="Simply Quran icon"
           >
+          <span class="status-pill status-pill--live">Open beta now live</span>
           <h1 id="hero-title" class="hero__title">Simply Quran</h1>
           <p class="hero__lede">
-            A digital replacement for your physical Mushaf. Built for focus, designed for the soul, 100% offline and ad-free.
+            Now in open beta on Android. A focused digital Mushaf with dual script, offline reading, and no ads.
           </p>
           <div class="hero__actions">
             <a
               class="btn btn--primary"
-              href="https://play.google.com/store/search?q=Simply%20Quran%20Fitra%20Labs&amp;c=apps"
+              href="https://play.google.com/apps/testing/app.fitra.quran"
+              data-android-href="https://play.google.com/store/apps/details?id=app.fitra.quran"
+              data-web-href="https://play.google.com/apps/testing/app.fitra.quran"
               target="_blank"
               rel="noopener noreferrer"
-            >Download on Play Store</a>
+              referrerpolicy="no-referrer"
+            >Join the open beta</a>
             <span class="btn btn--ghost">App Store coming soon</span>
           </div>
 
@@ -102,7 +105,7 @@
         <div class="section__inner section__inner--narrow">
           <h2 id="manifesto-heading" class="section__label">Purpose over bloat</h2>
           <p class="manifesto__text">
-            In an era of noise, we return to the Fitra, the natural state of purity and simplicity. No ads. No tracking. Just the Word.
+            In an era of noise, we return to the Fitra, the natural state of purity and simplicity. No ads. No behavioral tracking. Just the Word.
           </p>
         </div>
       </section>
@@ -131,7 +134,7 @@
         <div class="section__inner section__inner--narrow">
           <h2 id="sadaqah-heading" class="section__title section__title--light">Sustainable Sadaqah</h2>
           <p class="sadaqah__text">
-            50% of all Fitra Labs proceeds are donated to reputable Islamic charities. We believe in building tools that serve the Ummah, sustained by the community.
+            For voluntary sadaqah and donation contributions, Fitra Labs splits net proceeds equally: 50% supports selected charitable causes, and 50% helps cover the ongoing costs of building, maintaining, and supporting our tools.
           </p>
         </div>
       </section>
@@ -149,5 +152,6 @@
       </nav>
       <p class="footer__version" aria-label="Site version">v1.1.0</p>
     </footer>
+    <script src="/quran-beta.js" defer></script>
   </body>
 </html>
