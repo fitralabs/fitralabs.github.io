@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitra Labs — UX Design Directions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #AF9058;
+      --paper: #FAFAFA;
+      --ink: #1C1B18;
+      --muted: #4a4740;
+      --space: 8px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      letter-spacing: 0.05em;
+      background: #e8e6e1;
+      color: var(--ink);
+    }
+    header.doc {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(250, 250, 250, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(28, 27, 24, 0.08);
+      padding: calc(var(--space) * 2) calc(var(--space) * 3);
+    }
+    header.doc h1 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    header.doc p {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      max-width: 72ch;
+    }
+    nav.jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    nav.jump a {
+      font-size: 0.72rem;
+      text-decoration: none;
+      color: var(--ink);
+      padding: 6px 10px;
+      border: 1px solid rgba(175, 144, 88, 0.5);
+      border-radius: 999px;
+      background: #fff;
+    }
+    nav.jump a:hover { background: var(--paper); }
+    section.dir {
+      margin: calc(var(--space) * 4) auto;
+      max-width: 1100px;
+      padding: 0 calc(var(--space) * 2);
+    }
+    .dir-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .mock {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(28, 27, 24, 0.12);
+      border: 1px solid rgba(28, 27, 24, 0.06);
+      min-height: 280px;
+    }
+    .hero-strip {
+      padding: calc(var(--space) * 4) calc(var(--space) * 3);
+      text-align: center;
+    }
+    .icon-faux {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 12px;
+      border-radius: 12px;
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+    h2.title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 600;
+      margin: 0 0 8px;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    .title-gold {
+      background: linear-gradient(105deg, #c9a66b 0%, #AF9058 35%, #8f703f 70%, #d4b57a 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .sub {
+      margin: 0 auto 20px;
+      max-width: 36ch;
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.06em;
+    }
+    .cta-glass {
+      color: var(--ink);
+      border: 1px solid var(--gold);
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(10px);
+    }
+    .cta-solid {
+      color: var(--paper);
+      background: var(--gold);
+      border: 1px solid #8f703f;
+    }
+    .band {
+      padding: calc(var(--space) * 2) calc(var(--space) * 3);
+      font-size: 0.75rem;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .thumb {
+      width: 72px;
+      height: 96px;
+      border-radius: 8px;
+      border: 1px solid rgba(28, 27, 24, 0.12);
+      font-size: 0.55rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 6px;
+      color: var(--muted);
+    }
+    footer.note {
+      padding: calc(var(--space) * 6) calc(var(--space) * 3);
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    /* Direction 1 — Spec baseline */
+    #d1 .hero-strip {
+      background: linear-gradient(180deg, var(--gold) 0%, var(--paper) 88%);
+    }
+    #d1 .sub { color: rgba(28, 27, 24, 0.75); }
+    /* Direction 2 — Softer hero */
+    #d2 .hero-strip {
+      background: linear-gradient(180deg, #c4a574 0%, var(--paper) 100%);
+      padding-top: calc(var(--space) * 3);
+    }
+    /* Direction 3 — Panel headline (a11y) */
+    #d3 .hero-strip {
+      background: linear-gradient(180deg, #d8c4a0 0%, var(--paper) 100%);
+    }
+    #d3 .title-panel {
+      background: rgba(255, 255, 255, 0.88);
+      display: inline-block;
+      padding: 12px 20px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(175, 144, 88, 0.35);
+    }
+    #d3 .title-panel h2 { margin: 0; }
+    /* Direction 4 — Gallery-forward */
+    #d4 .hero-strip {
+      background: var(--paper);
+      padding-bottom: calc(var(--space) * 2);
+    }
+    #d4 .title { color: var(--ink); }
+    #d4 .band { background: #f0ebe3; border-top: 1px solid rgba(28, 27, 24, 0.06); }
+    /* Direction 5 — Minimal line luxe */
+    #d5 .hero-strip {
+      background: var(--paper);
+      border-bottom: 2px solid var(--gold);
+    }
+    #d5 .title { color: var(--ink); letter-spacing: 0.02em; }
+    #d5 .cta-glass { background: transparent; }
+    /* Direction 6 — Sadaqah-forward tint */
+    #d6 .hero-strip {
+      background: linear-gradient(180deg, #b8925a 0%, var(--paper) 75%);
+    }
+    #d6 .band { background: rgba(175, 144, 88, 0.22); }
+  </style>
+</head>
+<body>
+  <header class="doc">
+    <h1>Fitra Labs — design direction strips</h1>
+    <p>BMad UX Step 9. Six compressed mockups (hero + CTA + gallery hint). Palette locked to Fitra Gold <code>#AF9058</code>, Manuscript White <code>#FAFAFA</code>, Charcoal <code>#1C1B18</code>. Open locally in a browser; fonts load from Google Fonts.</p>
+    <nav class="jump" aria-label="Jump to direction">
+      <a href="#d1">1 Spec baseline</a>
+      <a href="#d2">2 Softer hero</a>
+      <a href="#d3">3 Panel headline</a>
+      <a href="#d4">4 Gallery-forward</a>
+      <a href="#d5">5 Line luxe</a>
+      <a href="#d6">6 Sadaqah tint</a>
+    </nav>
+  </header>
+
+  <section class="dir" id="d1">
+    <div class="dir-label">Direction 1 — Spec baseline</div>
+    <div class="mock">
+      <div class="hero-strip">
+        <div class="icon-faux" aria-hidden="true">ICON</div>
+        <h2 class="title title-gold">Simply Quran</h2>
+        <p class="sub">A digital replacement for your physical Mushaf. Built for focus, designed for the soul.</p>
+        <a class="cta cta-glass" href="#">Download on Play Store</a>
+      </div>
+      <div class="band" style="background: var(--paper);">
+        <div class="thumb" style="background: #fff;">Light</div>
+        <div class="thumb" style="background: #f4e8d4;">Sepia</div>
+        <div class="thumb" style="background: #1a1a1a; color: #ccc;">Dark</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dir" id="d2">
+    <div class="dir-label">Direction 2 — Softer hero wash</div>
+    <div class="mock">
+      <div class="hero-strip">
+        <div class="icon-faux" aria-hidden="true">ICON</div>
+        <h2 class="title title-gold">Simply Quran</h2>
+        <p class="sub">Shorter gold wash; more manuscript white visible; quieter drama.</p>
+        <a class="cta cta-glass" href="#">Download on Play Store</a>
+      </div>
+      <div class="band" style="background: var(--paper);">
+        <div class="thumb" style="background: #fff;">Light</div>
+        <div class="thumb" style="background: #f4e8d4;">Sepia</div>
+        <div class="thumb" style="background: #1a1a1a; color: #ccc;">Dark</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dir" id="d3">
+    <div class="dir-label">Direction 3 — High-readability panel</div>
+    <div class="mock">
+      <div class="hero-strip">
+        <div class="icon-faux" aria-hidden="true">ICON</div>
+        <div class="title-panel">
+          <h2 class="title title-gold">Simply Quran</h2>
+        </div>
+        <p class="sub">Display headline sits on a light panel; strongest WCAG-friendly gold treatment.</p>
+        <a class="cta cta-glass" href="#">Download on Play Store</a>
+      </div>
+      <div class="band" style="background: var(--paper);">
+        <div class="thumb" style="background: #fff;">Light</div>
+        <div class="thumb" style="background: #f4e8d4;">Sepia</div>
+        <div class="thumb" style="background: #1a1a1a; color: #ccc;">Dark</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dir" id="d4">
+    <div class="dir-label">Direction 4 — Gallery-forward</div>
+    <div class="mock">
+      <div class="hero-strip">
+        <div class="icon-faux" aria-hidden="true">ICON</div>
+        <h2 class="title">Simply Quran</h2>
+        <p class="sub">Flat manuscript hero; pushes proof earlier—good if screenshots are the hero.</p>
+        <a class="cta cta-solid" href="#">Download on Play Store</a>
+      </div>
+      <div class="band">
+        <div class="thumb" style="background: #fff;">Light</div>
+        <div class="thumb" style="background: #f4e8d4;">Sepia</div>
+        <div class="thumb" style="background: #1a1a1a; color: #ccc;">Dark</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dir" id="d5">
+    <div class="dir-label">Direction 5 — Minimal line luxe</div>
+    <div class="mock">
+      <div class="hero-strip">
+        <div class="icon-faux" aria-hidden="true">ICON</div>
+        <h2 class="title">Simply Quran</h2>
+        <p class="sub">Almost all manuscript; gold as hairline + border; extremely editorial.</p>
+        <a class="cta cta-glass" href="#">Download on Play Store</a>
+      </div>
+      <div class="band" style="background: var(--paper);">
+        <div class="thumb" style="background: #fff;">Light</div>
+        <div class="thumb" style="background: #f4e8d4;">Sepia</div>
+        <div class="thumb" style="background: #1a1a1a; color: #ccc;">Dark</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dir" id="d6">
+    <div class="dir-label">Direction 6 — Stronger gold atmosphere</div>
+    <div class="mock">
+      <div class="hero-strip">
+        <div class="icon-faux" aria-hidden="true">ICON</div>
+        <h2 class="title title-gold">Simply Quran</h2>
+        <p class="sub">Richer atmosphere; gallery band picks up gold dust—pairs with bold Sadaqah section.</p>
+        <a class="cta cta-glass" href="#">Download on Play Store</a>
+      </div>
+      <div class="band">
+        <div class="thumb" style="background: #fff;">Light</div>
+        <div class="thumb" style="background: #f4e8d4;">Sepia</div>
+        <div class="thumb" style="background: #1a1a1a; color: #ccc;">Dark</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="note">
+    Evaluation cues: layout intuitiveness, interaction weight (glass vs solid CTA), visual density, brand alignment with “still water,” and accessibility of headline treatments.
+  </footer>
+</body>
+</html>
