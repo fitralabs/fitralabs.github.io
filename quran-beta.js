@@ -1,10 +1,12 @@
 (function () {
-  var betaLink = document.querySelector("[data-android-href][data-web-href]");
-  if (!betaLink) return;
+  var betaLinks = document.querySelectorAll("[data-android-href][data-web-href]");
+  if (!betaLinks.length) return;
 
   var ua = navigator.userAgent || "";
   var isAndroid = /Android/i.test(ua);
+  var hrefKey = isAndroid ? "androidHref" : "webHref";
 
-  betaLink.href = isAndroid ? betaLink.dataset.androidHref : betaLink.dataset.webHref;
-  betaLink.textContent = isAndroid ? "Download on Play Store" : "Join the open beta";
+  betaLinks.forEach(function (betaLink) {
+    betaLink.href = betaLink.dataset[hrefKey];
+  });
 })();
